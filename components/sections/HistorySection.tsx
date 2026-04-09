@@ -61,7 +61,7 @@ export function HistorySection() {
           <div className="absolute top-[34px] left-4 right-4 h-px bg-gold/30 z-0 hidden lg:block" />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-y-16 lg:gap-8">
-            {TIMELINE_ENTRIES.map((entry, index) => (
+            {TIMELINE_ENTRIES.map((entry) => (
               <div 
                 key={entry.year} 
                 className="flex flex-col items-start lg:items-center text-left lg:text-center group"
