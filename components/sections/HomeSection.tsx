@@ -28,13 +28,13 @@ export function HomeSection() {
         <div className="absolute inset-0 bg-black/20" />
       </motion.div>
 
-      {/* Hero Text - Fades out over 1.5 seconds */}
-      <div className="relative z-10 text-center px-4 max-w-4xl">
+      {/* Hero Text - Improved Centering & Responsiveness */}
+      <div className="relative z-10 w-full text-center px-6">
         <motion.h1 
           initial={{ opacity: 1 }}
           animate={{ opacity: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="text-gold font-serif font-light text-xl md:text-3xl lg:text-4xl tracking-[0.6em] uppercase whitespace-nowrap"
+          className="text-gold font-serif font-light text-2xl md:text-3xl lg:text-4xl tracking-[0.6em] pr-[0.6em] uppercase mx-auto"
         >
           Journey through the DMZ
         </motion.h1>
