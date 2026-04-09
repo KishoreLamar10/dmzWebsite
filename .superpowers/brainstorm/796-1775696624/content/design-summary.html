@@ -1,0 +1,121 @@
+<h2>Complete Design Summary</h2>
+<p class="subtitle">All decisions consolidated — confirm before we write the spec</p>
+
+<div class="section">
+  <h3>Tech Stack</h3>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
+    <div style="background:#f5f0e8;border:1px solid #e0d8cc;border-radius:8px;padding:14px;">
+      <div class="label">Frontend</div>
+      <div style="font-size:14px;font-weight:600;color:#2c2416;margin-top:4px;">Next.js 14</div>
+      <div style="font-size:12px;color:#8b7355;margin-top:2px;">App Router · TypeScript · Tailwind CSS</div>
+    </div>
+    <div style="background:#f5f0e8;border:1px solid #e0d8cc;border-radius:8px;padding:14px;">
+      <div class="label">Database</div>
+      <div style="font-size:14px;font-weight:600;color:#2c2416;margin-top:4px;">Supabase + Prisma</div>
+      <div style="font-size:12px;color:#8b7355;margin-top:2px;">PostgreSQL · Type-safe ORM · Zod validation</div>
+    </div>
+    <div style="background:#f5f0e8;border:1px solid #e0d8cc;border-radius:8px;padding:14px;">
+      <div class="label">Deployment</div>
+      <div style="font-size:14px;font-weight:600;color:#2c2416;margin-top:4px;">Vercel</div>
+      <div style="font-size:12px;color:#8b7355;margin-top:2px;">Auto-deploy from GitHub · NextAuth (Phase 2)</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Design System — Warm Stone</h3>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+    <div style="text-align:center;">
+      <div style="width:56px;height:56px;border-radius:8px;background:#f5f0e8;border:1px solid #e0d8cc;"></div>
+      <div style="font-size:9px;color:#8b7355;margin-top:4px;">Cream<br>#f5f0e8</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="width:56px;height:56px;border-radius:8px;background:#ede5d8;border:1px solid #e0d8cc;"></div>
+      <div style="font-size:9px;color:#8b7355;margin-top:4px;">Sand<br>#ede5d8</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="width:56px;height:56px;border-radius:8px;background:#8b7355;"></div>
+      <div style="font-size:9px;color:#8b7355;margin-top:4px;">Warm Brown<br>#8b7355</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="width:56px;height:56px;border-radius:8px;background:#2c2416;"></div>
+      <div style="font-size:9px;color:#8b7355;margin-top:4px;">Charcoal<br>#2c2416</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="width:56px;height:56px;border-radius:8px;background:#c8b560;"></div>
+      <div style="font-size:9px;color:#8b7355;margin-top:4px;">Gold Accent<br>#c8b560</div>
+    </div>
+    <div style="margin-left:16px;flex:1;">
+      <div style="font-size:13px;color:#2c2416;font-family:Georgia,serif;font-weight:200;letter-spacing:2px;margin-bottom:4px;">Headings — Georgia (serif, light weight)</div>
+      <div style="font-size:13px;color:#2c2416;font-family:sans-serif;margin-bottom:4px;">Body — Inter (sans-serif)</div>
+      <div style="font-size:9px;letter-spacing:4px;color:#8b7355;text-transform:uppercase;">Labels — Uppercase, tracked</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Pages &amp; Sections</h3>
+  <div style="display:flex;flex-direction:column;gap:8px;">
+
+    <div style="background:#2c2416;border-radius:8px;padding:14px;display:flex;justify-content:space-between;align-items:center;">
+      <div>
+        <div style="font-size:9px;letter-spacing:3px;color:#c8b560;text-transform:uppercase;">/ — Landing</div>
+        <div style="font-size:13px;color:#f5f0e8;margin-top:3px;">Full-screen cinematic hero · DMZ imagery · tagline "Seeing Without Touching" · 4 section CTAs</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <div style="background:#f5f0e8;border:1px solid #e0d8cc;border-radius:8px;padding:12px;">
+        <div style="font-size:9px;letter-spacing:3px;color:#8b7355;text-transform:uppercase;">/history</div>
+        <div style="font-size:12px;color:#2c2416;margin-top:4px;line-height:1.6;">Full-width hero banner → vertical timeline of key DMZ events (1945–present) → photo cards</div>
+      </div>
+      <div style="background:#f5f0e8;border:1px solid #e0d8cc;border-radius:8px;padding:12px;">
+        <div style="font-size:9px;letter-spacing:3px;color:#8b7355;text-transform:uppercase;">/explore</div>
+        <div style="font-size:12px;color:#2c2416;margin-top:4px;line-height:1.6;">Full-width hero → map/location cards → photo gallery grid → digital news display area</div>
+      </div>
+      <div style="background:#f5f0e8;border:1px solid #e0d8cc;border-radius:8px;padding:12px;">
+        <div style="font-size:9px;letter-spacing:3px;color:#8b7355;text-transform:uppercase;">/proposal</div>
+        <div style="font-size:12px;color:#2c2416;margin-top:4px;line-height:1.6;">Full-width hero → concept statement → amphitheater renders/diagrams → glass wall detail cards</div>
+      </div>
+      <div style="background:#f5f0e8;border:1px solid #e0d8cc;border-radius:8px;padding:12px;">
+        <div style="font-size:9px;letter-spacing:3px;color:#8b7355;text-transform:uppercase;">/events</div>
+        <div style="font-size:12px;color:#2c2416;margin-top:4px;line-height:1.6;">Full-width hero → upcoming events cards → ticket booking (Phase 2 — schema ready from day 1)</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section">
+  <h3>Navigation</h3>
+  <div style="background:#2c2416;border-radius:8px;padding:14px;font-size:12px;color:#f5f0e8;line-height:1.8;">
+    Dark slim top bar · Logo/site name left · Section links right · Active section highlighted in gold ·
+    Client-side Next.js routing (instant, no reload) · Smooth fade transition between sections
+  </div>
+</div>
+
+<div class="section">
+  <h3>Phased Delivery</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div style="background:#f5f0e8;border:2px solid #4a6741;border-radius:8px;padding:14px;">
+      <div class="label" style="color:#4a6741;">Phase 1 — Build Now</div>
+      <ul style="font-size:12px;color:#2c2416;margin:8px 0;padding-left:16px;line-height:2;">
+        <li>Full site with all 5 pages</li>
+        <li>Warm Stone design system</li>
+        <li>Placeholder images throughout</li>
+        <li>Prisma schema (User, Event, Ticket)</li>
+        <li>Supabase + Vercel setup</li>
+      </ul>
+    </div>
+    <div style="background:#f5f0e8;border:1px solid #e0d8cc;border-radius:8px;padding:14px;">
+      <div class="label" style="color:#8b7355;">Phase 2 — Later</div>
+      <ul style="font-size:12px;color:#2c2416;margin:8px 0;padding-left:16px;line-height:2;">
+        <li>Real photos + renders swapped in</li>
+        <li>NextAuth user authentication</li>
+        <li>Ticket booking flow</li>
+        <li>Digital news feed display</li>
+        <li>Event management</li>
+      </ul>
+    </div>
+  </div>
+</div>

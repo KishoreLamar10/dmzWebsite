@@ -1,0 +1,87 @@
+<h2>Site Architecture</h2>
+<p class="subtitle">Next.js App Router · PostgreSQL · Prisma · Future-ready for ticket booking</p>
+
+<div class="section">
+  <h3>Frontend — Next.js App Router</h3>
+  <div style="background:#f5f0e8;border:1px solid #e0d8cc;border-radius:8px;padding:20px;font-family:monospace;font-size:13px;line-height:2;color:#2c2416;">
+    <div style="color:#8b7355;font-weight:700;">app/</div>
+    <div style="padding-left:20px;">
+      <div><span style="color:#8b7355;">layout.tsx</span> <span style="color:#aaa;font-family:sans-serif;font-size:11px;">— shared nav + footer (Warm Stone theme)</span></div>
+      <div><span style="color:#8b7355;">page.tsx</span> <span style="color:#aaa;font-family:sans-serif;font-size:11px;">— landing hero (full-screen DMZ imagery)</span></div>
+      <div><span style="color:#8b7355;">history/page.tsx</span> <span style="color:#aaa;font-family:sans-serif;font-size:11px;">— timeline of the DMZ</span></div>
+      <div><span style="color:#8b7355;">explore/page.tsx</span> <span style="color:#aaa;font-family:sans-serif;font-size:11px;">— interactive map / photo gallery</span></div>
+      <div><span style="color:#8b7355;">proposal/page.tsx</span> <span style="color:#aaa;font-family:sans-serif;font-size:11px;">— amphitheater concept + renders</span></div>
+      <div><span style="color:#8b7355;">events/page.tsx</span> <span style="color:#aaa;font-family:sans-serif;font-size:11px;">— upcoming events + ticket booking</span></div>
+      <div><span style="color:#8b7355;">api/</span></div>
+      <div style="padding-left:20px;">
+        <div><span style="color:#4a6741;">tickets/route.ts</span> <span style="color:#aaa;font-family:sans-serif;font-size:11px;">— book / list tickets</span></div>
+        <div><span style="color:#4a6741;">auth/route.ts</span> <span style="color:#aaa;font-family:sans-serif;font-size:11px;">— user registration + login</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Data Layer</h3>
+  <div class="options">
+
+    <div style="background:#f5f0e8;border:1px solid #e0d8cc;border-radius:8px;padding:16px;flex:1;">
+      <div class="label">Database</div>
+      <h3 style="margin:6px 0;">PostgreSQL + Prisma ORM</h3>
+      <p style="font-size:13px;color:#5a4a3a;">Type-safe queries, easy migrations, works great with Next.js API routes. Hosted on Neon (free tier) or Supabase.</p>
+      <div style="margin-top:10px;font-size:12px;font-family:monospace;color:#8b7355;">
+        User { id, name, email, passwordHash }<br>
+        Event { id, title, date, capacity }<br>
+        Ticket { id, userId, eventId, seat }
+      </div>
+    </div>
+
+    <div style="background:#f5f0e8;border:1px solid #e0d8cc;border-radius:8px;padding:16px;flex:1;">
+      <div class="label">Auth</div>
+      <h3 style="margin:6px 0;">NextAuth.js</h3>
+      <p style="font-size:13px;color:#5a4a3a;">Email + password login to start. Can add Google/GitHub OAuth later. Session stored server-side — secure and simple.</p>
+    </div>
+
+    <div style="background:#f5f0e8;border:1px solid #e0d8cc;border-radius:8px;padding:16px;flex:1;">
+      <div class="label">Validation</div>
+      <h3 style="margin:6px 0;">Zod</h3>
+      <p style="font-size:13px;color:#5a4a3a;">All API inputs validated with Zod schemas. Shared types between frontend forms and API routes.</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="section">
+  <h3>Deployment</h3>
+  <div style="background:#f5f0e8;border:1px solid #e0d8cc;border-radius:8px;padding:16px;font-size:13px;color:#5a4a3a;line-height:1.8;">
+    <strong>Vercel</strong> for the Next.js app (free tier, automatic deploys from GitHub) ·
+    <strong>Neon or Supabase</strong> for PostgreSQL (free tier) ·
+    <strong>.env.local</strong> for secrets — never committed
+  </div>
+</div>
+
+<div class="section">
+  <h3>What's built now vs. later</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+    <div style="background:#f5f0e8;border:1px solid #c8b8a0;border-radius:8px;padding:16px;">
+      <div class="label" style="color:#4a6741;">Phase 1 — Now</div>
+      <ul style="font-size:13px;color:#2c2416;margin:8px 0;padding-left:18px;line-height:2;">
+        <li>Landing page + 4 section pages</li>
+        <li>Warm Stone design system</li>
+        <li>Navigation + page transitions</li>
+        <li>Placeholder content throughout</li>
+        <li>DB schema + Prisma setup</li>
+      </ul>
+    </div>
+    <div style="background:#f5f0e8;border:1px solid #c8b8a0;border-radius:8px;padding:16px;">
+      <div class="label" style="color:#8b7355;">Phase 2 — Later</div>
+      <ul style="font-size:13px;color:#2c2416;margin:8px 0;padding-left:18px;line-height:2;">
+        <li>User auth (NextAuth)</li>
+        <li>Ticket booking flow</li>
+        <li>Real images + content</li>
+        <li>Digital news display</li>
+        <li>Event management</li>
+      </ul>
+    </div>
+  </div>
+</div>

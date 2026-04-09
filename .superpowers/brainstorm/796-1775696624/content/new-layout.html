@@ -1,0 +1,157 @@
+<h2>New Site Structure — Single Scrolling Page</h2>
+<p class="subtitle">Persistent navbar · all sections scroll in sequence · anchor-based navigation</p>
+
+<div class="section">
+  <h3>Page Flow</h3>
+  <div style="display:flex;flex-direction:column;gap:0;border:1px solid #e0d8cc;border-radius:8px;overflow:hidden;">
+
+    <!-- Navbar -->
+    <div style="background:#2c2416;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10;">
+      <div style="font-size:9px;letter-spacing:3px;color:#f5f0e8;text-transform:uppercase;font-weight:700;">DMZ PROJECT</div>
+      <div style="display:flex;gap:14px;">
+        <div style="font-size:7px;color:#c8b560;letter-spacing:1px;text-transform:uppercase;">Home</div>
+        <div style="font-size:7px;color:#a09080;letter-spacing:1px;text-transform:uppercase;">History</div>
+        <div style="font-size:7px;color:#a09080;letter-spacing:1px;text-transform:uppercase;">Stories</div>
+        <div style="font-size:7px;color:#a09080;letter-spacing:1px;text-transform:uppercase;">Map</div>
+        <div style="font-size:7px;color:#a09080;letter-spacing:1px;text-transform:uppercase;">Events</div>
+        <div style="font-size:7px;color:#a09080;letter-spacing:1px;text-transform:uppercase;">Archives</div>
+        <div style="font-size:7px;color:#a09080;letter-spacing:1px;text-transform:uppercase;">Team</div>
+      </div>
+    </div>
+
+    <!-- Home section -->
+    <div style="background:linear-gradient(to bottom,#1a1410,#3a3028);height:100px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;position:relative;">
+      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.2;">
+        <div style="font-size:8px;color:#f5f0e8;letter-spacing:2px;border:1px solid #f5f0e8;padding:4px 8px;">▶ Background Video</div>
+      </div>
+      <div style="font-size:8px;letter-spacing:4px;color:#c8b560;text-transform:uppercase;z-index:1;">38TH PARALLEL NORTH</div>
+      <div style="font-size:20px;font-weight:200;color:#f5f0e8;letter-spacing:4px;font-family:Georgia,serif;z-index:1;">KOREAN DMZ</div>
+      <div style="font-size:8px;color:#c0b098;letter-spacing:2px;z-index:1;">Seeing Without Touching</div>
+      <div style="font-size:7px;color:#c8b560;margin-top:8px;z-index:1;">↓ Scroll to explore</div>
+    </div>
+
+    <!-- History section -->
+    <div style="background:#f5f0e8;padding:14px 20px;border-top:2px solid #e0d8cc;">
+      <div style="font-size:8px;letter-spacing:3px;color:#8b7355;text-transform:uppercase;margin-bottom:6px;">History</div>
+      <div style="font-size:11px;color:#2c2416;font-family:Georgia,serif;margin-bottom:8px;">The Korean DMZ — 1945 to Present</div>
+      <div style="display:flex;gap:8px;">
+        <div style="width:3px;background:#8b7355;border-radius:2px;flex-shrink:0;"></div>
+        <div style="display:flex;flex-direction:column;gap:6px;flex:1;">
+          <div style="display:flex;gap:8px;align-items:flex-start;">
+            <div style="font-size:8px;color:#c8b560;font-weight:700;min-width:24px;">1945</div>
+            <div style="font-size:8px;color:#5a4a3a;">Korea divided along the 38th parallel after WWII</div>
+          </div>
+          <div style="display:flex;gap:8px;align-items:flex-start;">
+            <div style="font-size:8px;color:#c8b560;font-weight:700;min-width:24px;">1953</div>
+            <div style="font-size:8px;color:#5a4a3a;">Armistice Agreement establishes the DMZ</div>
+          </div>
+          <div style="display:flex;gap:8px;align-items:flex-start;">
+            <div style="font-size:8px;color:#c8b560;font-weight:700;min-width:24px;">Now</div>
+            <div style="font-size:8px;color:#5a4a3a;">One of the most heavily fortified borders in the world</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stories section -->
+    <div style="background:#ede5d8;padding:14px 20px;border-top:1px solid #d8cfc4;">
+      <div style="font-size:8px;letter-spacing:3px;color:#8b7355;text-transform:uppercase;margin-bottom:6px;">Stories</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;">
+        <div style="background:#f5f0e8;border-radius:4px;padding:8px;">
+          <div style="height:28px;background:#e0d8cc;border-radius:3px;margin-bottom:4px;"></div>
+          <div style="font-size:7px;color:#2c2416;font-weight:600;">A Family Divided</div>
+          <div style="font-size:6px;color:#8b7355;margin-top:2px;">Personal narrative</div>
+        </div>
+        <div style="background:#f5f0e8;border-radius:4px;padding:8px;">
+          <div style="height:28px;background:#e0d8cc;border-radius:3px;margin-bottom:4px;"></div>
+          <div style="font-size:7px;color:#2c2416;font-weight:600;">The Silent Border</div>
+          <div style="font-size:6px;color:#8b7355;margin-top:2px;">Photo essay</div>
+        </div>
+        <div style="background:#f5f0e8;border-radius:4px;padding:8px;">
+          <div style="height:28px;background:#e0d8cc;border-radius:3px;margin-bottom:4px;"></div>
+          <div style="font-size:7px;color:#2c2416;font-weight:600;">Wildlife Reclaims</div>
+          <div style="font-size:6px;color:#8b7355;margin-top:2px;">Nature feature</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Map section -->
+    <div style="background:#f5f0e8;padding:14px 20px;border-top:1px solid #e0d8cc;">
+      <div style="font-size:8px;letter-spacing:3px;color:#8b7355;text-transform:uppercase;margin-bottom:6px;">Interactive Map · Our Proposal</div>
+      <div style="display:flex;gap:10px;">
+        <div style="flex:1.5;background:#d8cfc0;border-radius:4px;height:50px;display:flex;align-items:center;justify-content:center;">
+          <div style="font-size:7px;color:#8b7355;letter-spacing:1px;text-transform:uppercase;">DMZ Map Placeholder</div>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:4px;">
+          <div style="font-size:9px;color:#2c2416;font-family:Georgia,serif;">"Seeing Without Touching"</div>
+          <div style="font-size:7px;color:#5a4a3a;line-height:1.5;">Glass-walled amphitheater at the 38th parallel — shared events, divided by glass</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Events section -->
+    <div style="background:#ede5d8;padding:14px 20px;border-top:1px solid #d8cfc4;">
+      <div style="font-size:8px;letter-spacing:3px;color:#8b7355;text-transform:uppercase;margin-bottom:6px;">Events</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+        <div style="background:#f5f0e8;border-radius:4px;padding:8px;display:flex;justify-content:space-between;align-items:center;">
+          <div>
+            <div style="font-size:8px;color:#2c2416;font-weight:600;">Peace Concert 2026</div>
+            <div style="font-size:7px;color:#8b7355;">Jun 15, 2026</div>
+          </div>
+          <div style="background:#2c2416;padding:3px 6px;font-size:6px;letter-spacing:1px;color:#f5f0e8;text-transform:uppercase;border-radius:2px;">Book</div>
+        </div>
+        <div style="background:#f5f0e8;border-radius:4px;padding:8px;display:flex;justify-content:space-between;align-items:center;">
+          <div>
+            <div style="font-size:8px;color:#2c2416;font-weight:600;">Cultural Exchange</div>
+            <div style="font-size:7px;color:#8b7355;">Aug 22, 2026</div>
+          </div>
+          <div style="background:#2c2416;padding:3px 6px;font-size:6px;letter-spacing:1px;color:#f5f0e8;text-transform:uppercase;border-radius:2px;">Book</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Archives section -->
+    <div style="background:#f5f0e8;padding:14px 20px;border-top:1px solid #e0d8cc;">
+      <div style="font-size:8px;letter-spacing:3px;color:#8b7355;text-transform:uppercase;margin-bottom:6px;">Archives · Testimonies</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;">
+        <div style="background:#2c2416;border-radius:4px;height:36px;display:flex;align-items:center;justify-content:center;gap:4px;">
+          <div style="font-size:9px;color:#c8b560;">▶</div>
+          <div style="font-size:7px;color:#f5f0e8;">Testimony #1</div>
+        </div>
+        <div style="background:#2c2416;border-radius:4px;height:36px;display:flex;align-items:center;justify-content:center;gap:4px;">
+          <div style="font-size:9px;color:#c8b560;">▶</div>
+          <div style="font-size:7px;color:#f5f0e8;">Testimony #2</div>
+        </div>
+        <div style="background:#2c2416;border-radius:4px;height:36px;display:flex;align-items:center;justify-content:center;gap:4px;">
+          <div style="font-size:9px;color:#c8b560;">▶</div>
+          <div style="font-size:7px;color:#f5f0e8;">Testimony #3</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About the Team section -->
+    <div style="background:#ede5d8;padding:14px 20px;border-top:1px solid #d8cfc4;">
+      <div style="font-size:8px;letter-spacing:3px;color:#8b7355;text-transform:uppercase;margin-bottom:6px;">About the Team</div>
+      <div style="display:flex;gap:12px;">
+        <div style="text-align:center;">
+          <div style="width:32px;height:32px;border-radius:50%;background:#c8b8a0;margin:0 auto 4px;"></div>
+          <div style="font-size:7px;color:#2c2416;font-weight:600;">Student 1</div>
+          <div style="font-size:6px;color:#8b7355;">Architecture</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:32px;height:32px;border-radius:50%;background:#c8b8a0;margin:0 auto 4px;"></div>
+          <div style="font-size:7px;color:#2c2416;font-weight:600;">Student 2</div>
+          <div style="font-size:6px;color:#8b7355;">Architecture</div>
+        </div>
+        <div style="flex:1;font-size:7px;color:#5a4a3a;line-height:1.7;">A proposal developed as part of an architecture studio exploring borders, division, and the possibility of shared space.</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background:#2c2416;padding:8px 20px;display:flex;justify-content:space-between;align-items:center;">
+      <div style="font-size:7px;color:#8b7355;letter-spacing:2px;text-transform:uppercase;">DMZ Project · 2026</div>
+      <div style="font-size:7px;color:#6a5a4a;">An Architecture Proposal</div>
+    </div>
+
+  </div>
+</div>

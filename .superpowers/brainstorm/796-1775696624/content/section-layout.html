@@ -1,0 +1,115 @@
+<h2>Inner Section Layout</h2>
+<p class="subtitle">How each section looks after clicking from the landing page</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="top-banner" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f5f0e8;height:240px;padding:0;overflow:hidden;border-bottom:1px solid #e0d8cc;">
+      <!-- Nav -->
+      <div style="background:#2c2416;height:32px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;">
+        <div style="font-size:8px;letter-spacing:3px;color:#f5f0e8;text-transform:uppercase;">DMZ PROJECT</div>
+        <div style="display:flex;gap:12px;">
+          <div style="font-size:7px;color:#a09080;letter-spacing:1px;">HISTORY</div>
+          <div style="font-size:7px;color:#c8b560;letter-spacing:1px;border-bottom:1px solid #c8b560;padding-bottom:1px;">EXPLORE</div>
+          <div style="font-size:7px;color:#a09080;letter-spacing:1px;">PROPOSAL</div>
+          <div style="font-size:7px;color:#a09080;letter-spacing:1px;">EVENTS</div>
+        </div>
+      </div>
+      <!-- Section banner -->
+      <div style="background:linear-gradient(to right,#3a3028,#5a4a38);height:50px;display:flex;align-items:center;padding:0 16px;gap:10px;">
+        <div style="font-size:16px;font-weight:200;color:#f5f0e8;letter-spacing:3px;font-family:Georgia,serif;">EXPLORE THE DMZ</div>
+        <div style="flex:1;height:1px;background:rgba(200,181,96,0.4);"></div>
+        <div style="font-size:7px;color:#c8b560;letter-spacing:2px;">38°N</div>
+      </div>
+      <!-- Content area -->
+      <div style="padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:8px;height:158px;overflow:hidden;">
+        <div style="background:#ede5d8;border-radius:4px;display:flex;align-items:center;justify-content:center;">
+          <div style="font-size:8px;color:#8b7355;letter-spacing:1px;text-transform:uppercase;">Photo / Map</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <div style="background:#ede5d8;border-radius:4px;height:30px;display:flex;align-items:center;padding:0 8px;">
+            <div style="font-size:8px;color:#2c2416;font-weight:600;">Section Heading</div>
+          </div>
+          <div style="background:#ede5d8;border-radius:4px;flex:1;padding:8px;">
+            <div style="height:6px;background:#c8b8a0;border-radius:3px;margin-bottom:4px;width:90%;"></div>
+            <div style="height:6px;background:#c8b8a0;border-radius:3px;margin-bottom:4px;width:75%;"></div>
+            <div style="height:6px;background:#c8b8a0;border-radius:3px;width:85%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Banner Header + Content Grid</h3>
+      <p>Section title in a dark atmospheric banner below the nav. Content below in a flexible grid — image left, text/info right. Clean, consistent across all 4 sections.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="sidebar-nav" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f5f0e8;height:240px;padding:0;overflow:hidden;border-bottom:1px solid #e0d8cc;">
+      <!-- Nav -->
+      <div style="background:#2c2416;height:32px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;">
+        <div style="font-size:8px;letter-spacing:3px;color:#f5f0e8;text-transform:uppercase;">DMZ PROJECT</div>
+        <div style="font-size:7px;color:#c8b560;letter-spacing:1px;">← Back to Home</div>
+      </div>
+      <!-- Body with sidebar -->
+      <div style="display:flex;height:208px;">
+        <!-- Sidebar -->
+        <div style="width:80px;background:#2c2416;padding:12px 8px;display:flex;flex-direction:column;gap:8px;">
+          <div style="font-size:7px;color:#8b7355;letter-spacing:1px;text-transform:uppercase;border-bottom:1px solid #3a3028;padding-bottom:6px;">Sections</div>
+          <div style="font-size:7px;color:#a09080;letter-spacing:1px;">History</div>
+          <div style="font-size:7px;color:#c8b560;letter-spacing:1px;font-weight:600;">Explore</div>
+          <div style="font-size:7px;color:#a09080;letter-spacing:1px;">Proposal</div>
+          <div style="font-size:7px;color:#a09080;letter-spacing:1px;">Events</div>
+        </div>
+        <!-- Content -->
+        <div style="flex:1;padding:12px;display:flex;flex-direction:column;gap:8px;overflow:hidden;">
+          <div style="font-size:13px;font-weight:200;color:#2c2416;letter-spacing:2px;font-family:Georgia,serif;">EXPLORE THE DMZ</div>
+          <div style="background:#ede5d8;border-radius:4px;flex:1;display:flex;align-items:center;justify-content:center;">
+            <div style="font-size:8px;color:#8b7355;letter-spacing:1px;text-transform:uppercase;">Content Area</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Persistent Sidebar Navigation</h3>
+      <p>Dark left sidebar always shows all sections with active state highlighted. Main content area on the right. Easy to jump between sections at any time. More app-like feel.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="full-immersive" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f5f0e8;height:240px;padding:0;overflow:hidden;border-bottom:1px solid #e0d8cc;">
+      <!-- Nav -->
+      <div style="background:#2c2416;height:32px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;">
+        <div style="font-size:8px;letter-spacing:3px;color:#f5f0e8;text-transform:uppercase;">DMZ PROJECT</div>
+        <div style="display:flex;gap:12px;">
+          <div style="font-size:7px;color:#a09080;letter-spacing:1px;">HISTORY</div>
+          <div style="font-size:7px;color:#c8b560;letter-spacing:1px;border-bottom:1px solid #c8b560;padding-bottom:1px;">EXPLORE</div>
+          <div style="font-size:7px;color:#a09080;letter-spacing:1px;">PROPOSAL</div>
+          <div style="font-size:7px;color:#a09080;letter-spacing:1px;">EVENTS</div>
+        </div>
+      </div>
+      <!-- Full width hero image for section -->
+      <div style="background:linear-gradient(to bottom,#3a3028,#5a4a38);height:80px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;">
+        <div style="font-size:14px;font-weight:200;color:#f5f0e8;letter-spacing:4px;font-family:Georgia,serif;">EXPLORE</div>
+        <div style="font-size:7px;color:#c8b560;letter-spacing:3px;text-transform:uppercase;">The DMZ</div>
+      </div>
+      <!-- Scrollable content below -->
+      <div style="padding:10px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;overflow:hidden;">
+        <div style="background:#ede5d8;border-radius:4px;height:60px;display:flex;align-items:center;justify-content:center;">
+          <div style="font-size:7px;color:#8b7355;text-transform:uppercase;letter-spacing:1px;">Card 1</div>
+        </div>
+        <div style="background:#ede5d8;border-radius:4px;height:60px;display:flex;align-items:center;justify-content:center;">
+          <div style="font-size:7px;color:#8b7355;text-transform:uppercase;letter-spacing:1px;">Card 2</div>
+        </div>
+        <div style="background:#ede5d8;border-radius:4px;height:60px;display:flex;align-items:center;justify-content:center;">
+          <div style="font-size:7px;color:#8b7355;text-transform:uppercase;letter-spacing:1px;">Card 3</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Full-Width Section Hero + Cards</h3>
+      <p>Each section opens with its own full-width atmospheric mini-hero, then scrolls into a card/grid layout below. Most immersive — each section feels like its own chapter.</p>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"C:/Users/balak/Documents/Projects/dmz-website-temp/package.json\" \"C:/Users/balak/Documents/Projects/dmzWebsite/package.json\")",
+      "Bash(cp \"C:/Users/balak/Documents/Projects/dmz-website-temp/package-lock.json\" \"C:/Users/balak/Documents/Projects/dmzWebsite/package-lock.json\")",
+      "Bash(cp \"C:/Users/balak/Documents/Projects/dmz-website-temp/tsconfig.json\" \"C:/Users/balak/Documents/Projects/dmzWebsite/tsconfig.json\")",
+      "Bash(cp \"C:/Users/balak/Documents/Projects/dmz-website-temp/next.config.ts\" \"C:/Users/balak/Documents/Projects/dmzWebsite/next.config.ts\")",
+      "Bash(cp \"C:/Users/balak/Documents/Projects/dmz-website-temp/next-env.d.ts\" \"C:/Users/balak/Documents/Projects/dmzWebsite/next-env.d.ts\")",
+      "Bash(npm run:*)",
+      "Bash(npm test:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(npx prisma:*)",
+      "Bash(ls:*)"
+    ]
+  }
+}

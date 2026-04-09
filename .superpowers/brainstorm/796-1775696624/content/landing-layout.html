@@ -1,0 +1,106 @@
+<h2>Landing Page Layout</h2>
+<p class="subtitle">Which hero layout feels right for the first impression?</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="fullscreen-hero" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f5f0e8;height:220px;padding:0;overflow:hidden;border-bottom:1px solid #e0d8cc;position:relative;">
+      <!-- Fullscreen hero mockup -->
+      <div style="background:#2c2416;height:36px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;">
+        <div style="font-size:9px;letter-spacing:3px;color:#f5f0e8;text-transform:uppercase;">DMZ PROJECT</div>
+        <div style="display:flex;gap:16px;">
+          <div style="font-size:8px;color:#a09080;letter-spacing:1px;">HISTORY</div>
+          <div style="font-size:8px;color:#a09080;letter-spacing:1px;">EXPLORE</div>
+          <div style="font-size:8px;color:#a09080;letter-spacing:1px;">PROPOSAL</div>
+          <div style="font-size:8px;color:#a09080;letter-spacing:1px;">EVENTS</div>
+        </div>
+      </div>
+      <div style="background:linear-gradient(to bottom, #3a3028 0%, #5a4a38 60%, #8b7355 100%);height:184px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;position:relative;">
+        <div style="position:absolute;inset:0;opacity:0.15;background:repeating-linear-gradient(0deg,transparent,transparent 20px,rgba(255,255,255,0.1) 20px,rgba(255,255,255,0.1) 21px);"></div>
+        <div style="font-size:8px;letter-spacing:4px;color:#c8b560;text-transform:uppercase;z-index:1;">38TH PARALLEL NORTH</div>
+        <div style="font-size:22px;font-weight:200;color:#f5f0e8;letter-spacing:4px;font-family:Georgia,serif;z-index:1;">KOREAN DMZ</div>
+        <div style="font-size:9px;color:#c0b098;letter-spacing:2px;z-index:1;">Seeing Without Touching</div>
+        <div style="display:flex;gap:8px;margin-top:12px;z-index:1;">
+          <div style="background:#8b7355;padding:4px 10px;font-size:7px;letter-spacing:2px;color:#f5f0e8;text-transform:uppercase;">Explore</div>
+          <div style="border:1px solid #f5f0e8;padding:4px 10px;font-size:7px;letter-spacing:2px;color:#f5f0e8;text-transform:uppercase;">Our Proposal</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Full-Screen Cinematic Hero</h3>
+      <p>Dark atmospheric image fills the entire screen. Site title and tagline centered. Two CTA buttons. Navigation is a slim dark bar at top. Most dramatic, immediately communicates the weight of the subject.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="split-hero" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f5f0e8;height:220px;padding:0;overflow:hidden;border-bottom:1px solid #e0d8cc;">
+      <!-- Split hero mockup -->
+      <div style="background:#f5f0e8;height:36px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;border-bottom:1px solid #e0d8cc;">
+        <div style="font-size:9px;letter-spacing:3px;color:#2c2416;text-transform:uppercase;font-weight:700;">DMZ PROJECT</div>
+        <div style="display:flex;gap:16px;">
+          <div style="font-size:8px;color:#8b7355;letter-spacing:1px;">HISTORY</div>
+          <div style="font-size:8px;color:#8b7355;letter-spacing:1px;">EXPLORE</div>
+          <div style="font-size:8px;color:#8b7355;letter-spacing:1px;">PROPOSAL</div>
+          <div style="font-size:8px;color:#8b7355;letter-spacing:1px;">EVENTS</div>
+        </div>
+      </div>
+      <div style="display:flex;height:184px;">
+        <div style="flex:1;background:linear-gradient(135deg,#3a3028,#5a4a38);display:flex;align-items:center;justify-content:center;">
+          <div style="text-align:center;">
+            <div style="font-size:7px;color:#c8b560;letter-spacing:3px;text-transform:uppercase;">NORTH</div>
+            <div style="width:30px;height:1px;background:#c8b560;margin:4px auto;"></div>
+            <div style="font-size:8px;color:#f5f0e8;letter-spacing:1px;">조선민주주의</div>
+          </div>
+        </div>
+        <div style="width:2px;background:#8b7355;"></div>
+        <div style="flex:1;background:linear-gradient(135deg,#e8ddd0,#f5f0e8);display:flex;align-items:center;justify-content:center;">
+          <div style="text-align:center;">
+            <div style="font-size:7px;color:#8b7355;letter-spacing:3px;text-transform:uppercase;">SOUTH</div>
+            <div style="width:30px;height:1px;background:#8b7355;margin:4px auto;"></div>
+            <div style="font-size:8px;color:#2c2416;letter-spacing:1px;">대한민국</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Split Screen (North / South)</h3>
+      <p>Hero divided into two halves — dark left (North), light right (South), divided by a thin vertical line. Directly mirrors the glass wall concept. Conceptually powerful, immediately communicates the duality.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="editorial-hero" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f5f0e8;height:220px;padding:0;overflow:hidden;border-bottom:1px solid #e0d8cc;">
+      <!-- Editorial hero mockup -->
+      <div style="background:#f5f0e8;height:36px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;border-bottom:1px solid #e0d8cc;">
+        <div style="font-size:9px;letter-spacing:3px;color:#2c2416;text-transform:uppercase;font-weight:700;">DMZ PROJECT</div>
+        <div style="display:flex;gap:16px;">
+          <div style="font-size:8px;color:#8b7355;letter-spacing:1px;">HISTORY</div>
+          <div style="font-size:8px;color:#8b7355;letter-spacing:1px;">EXPLORE</div>
+          <div style="font-size:8px;color:#8b7355;letter-spacing:1px;">PROPOSAL</div>
+          <div style="font-size:8px;color:#8b7355;letter-spacing:1px;">EVENTS</div>
+        </div>
+      </div>
+      <div style="display:flex;height:184px;">
+        <div style="flex:1.2;padding:20px;display:flex;flex-direction:column;justify-content:center;gap:8px;">
+          <div style="font-size:7px;letter-spacing:4px;color:#8b7355;text-transform:uppercase;">38°N · Since 1953</div>
+          <div style="font-size:18px;font-weight:200;color:#2c2416;letter-spacing:2px;font-family:Georgia,serif;line-height:1.3;">KOREAN<br>DMZ</div>
+          <div style="font-size:8px;color:#6a5a4a;line-height:1.6;">A border between worlds.<br>A proposal for connection.</div>
+          <div style="display:flex;gap:6px;margin-top:8px;">
+            <div style="background:#2c2416;padding:4px 8px;font-size:7px;letter-spacing:2px;color:#f5f0e8;text-transform:uppercase;">Explore</div>
+            <div style="border:1px solid #8b7355;padding:4px 8px;font-size:7px;letter-spacing:2px;color:#8b7355;text-transform:uppercase;">Proposal</div>
+          </div>
+        </div>
+        <div style="flex:1;background:linear-gradient(135deg,#4a3d30,#7a6a55);position:relative;">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+            <div style="font-size:8px;color:rgba(245,240,232,0.4);letter-spacing:2px;text-transform:uppercase;">DMZ Photo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Editorial (Text Left, Image Right)</h3>
+      <p>Left half: large typography, tagline, and CTAs on the warm beige. Right half: atmospheric DMZ photo. Clean, architectural, feels like a magazine spread. Very readable on first visit.</p>
+    </div>
+  </div>
+
+</div>
