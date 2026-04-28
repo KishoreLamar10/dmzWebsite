@@ -7,6 +7,7 @@ import { Volume2, VolumeX } from 'lucide-react'
 export function HomeSection() {
   const [isMuted, setIsMuted] = useState(true)
   const [showControls, setShowControls] = useState(false)
+  const sectionRef = useRef<HTMLElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
 
   // Show sound control after the hero text fades and video reveals
@@ -15,6 +16,27 @@ export function HomeSection() {
       setShowControls(true)
     }, 1500)
     return () => clearTimeout(timer)
+  }, [])
+
+  useEffect(() => {
+    const section = sectionRef.current
+    const video = videoRef.current
+    if (!section || !video) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => undefined)
+        } else {
+          video.pause()
+        }
+      },
+      { threshold: 0.35 }
+    )
+
+    observer.observe(section)
+
+    return () => observer.disconnect()
   }, [])
 
   const toggleMute = () => {
@@ -26,6 +48,7 @@ export function HomeSection() {
 
   return (
     <section
+      ref={sectionRef}
       id="home"
       className="relative h-screen flex items-center justify-center overflow-hidden bg-charcoal"
     >
