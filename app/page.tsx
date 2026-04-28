@@ -4,7 +4,6 @@ import { StoriesSection } from '@/components/sections/StoriesSection'
 import { MapSection } from '@/components/sections/MapSection'
 import { EventsSection } from '@/components/sections/EventsSection'
 import { ArchivesSection } from '@/components/sections/ArchivesSection'
-import { TeamSection } from '@/components/sections/TeamSection'
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
       <MapSection />
       <EventsSection />
       <ArchivesSection />
-      <TeamSection />
     </div>
   )
 }

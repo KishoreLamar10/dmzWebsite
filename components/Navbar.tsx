@@ -9,7 +9,6 @@ const SECTIONS = [
   { id: 'map', label: 'Map' },
   { id: 'events', label: 'Events' },
   { id: 'archives', label: 'Archives' },
-  { id: 'team', label: 'Team' },
 ]
 
 export function Navbar() {

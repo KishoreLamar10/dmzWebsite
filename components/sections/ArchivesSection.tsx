@@ -1,35 +1,42 @@
+import Image from 'next/image'
 import { SectionLabel } from '@/components/ui/SectionLabel'
 
 const TESTIMONIES = [
   {
     title: 'The Mapmaker of 1953',
     description: 'A retired surveyor recounts the atmospheric pressure and silence while drawing the boundaries of the DMZ.',
-    duration: '12:45'
+    duration: '12:45',
+    image: '/archives/mapmaker-1953.png'
   },
   {
     title: 'Across the Wire',
     description: 'A former resident of the North shares memories of family celebrations and the day the border closed permanently.',
-    duration: '18:20'
+    duration: '18:20',
+    image: '/archives/across-the-wire.png'
   },
   {
     title: 'Birds of the Buffer Zone',
     description: 'A field biologist documents the incredible resilience of nature within the most fortified border on Earth.',
-    duration: '15:10'
+    duration: '15:10',
+    image: '/archives/birds-buffer-zone.png'
   },
   {
     title: 'The Village of Peace',
     description: 'Stories from the residents of Daeseong-dong, the only South Korean village located within the DMZ.',
-    duration: '21:30'
+    duration: '21:30',
+    image: '/archives/village-of-peace.png'
   },
   {
     title: 'Letters from My Sister',
     description: 'A collection of unsent correspondence reflecting 70 years of longing and the hope for a future reunion.',
-    duration: '10:05'
+    duration: '10:05',
+    image: '/archives/letters-from-sister.png'
   },
   {
     title: 'Soundscapes of the 38th',
     description: 'A sonic journey capturing the contrast between the wind in the trees and the stillness of the checkpoint.',
-    duration: '09:40'
+    duration: '09:40',
+    image: '/archives/soundscapes-38th.png'
   }
 ]
 
@@ -49,11 +56,19 @@ export function ArchivesSection() {
           {TESTIMONIES.map(video => (
             <div key={video.title} className="group relative bg-[#1a1610] border border-gold/10 p-6 flex flex-col justify-between hover:border-gold/30 transition-all cursor-pointer">
               <div className="relative aspect-video bg-black/40 mb-6 flex items-center justify-center overflow-hidden border border-gold/5">
+                <Image
+                  src={video.image}
+                  alt={`${video.title} testimony thumbnail`}
+                  fill
+                  sizes="(min-width: 1024px) calc((100vw - 256px) / 3), (min-width: 768px) calc((100vw - 96px) / 2), calc(100vw - 64px)"
+                  className="object-cover opacity-70 grayscale transition-all duration-700 group-hover:scale-105 group-hover:opacity-90 group-hover:grayscale-0"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent" />
                 {/* Play Button Overlay */}
-                <div className="w-12 h-12 rounded-full border border-gold/40 flex items-center justify-center group-hover:bg-gold/10 transition-all">
+                <div className="relative z-10 w-12 h-12 rounded-full border border-gold/40 flex items-center justify-center bg-charcoal/30 backdrop-blur-sm group-hover:bg-gold/10 transition-all">
                   <div className="w-0 h-0 border-t-[8px] border-t-transparent border-l-[12px] border-l-gold border-b-[8px] border-b-transparent ml-1" />
                 </div>
-                <div className="absolute bottom-2 right-2 px-2 py-0.5 bg-black/60 text-gold text-[10px] tracking-widest">
+                <div className="absolute bottom-2 right-2 z-10 px-2 py-0.5 bg-black/60 text-gold text-[10px] tracking-widest">
                   {video.duration}
                 </div>
               </div>

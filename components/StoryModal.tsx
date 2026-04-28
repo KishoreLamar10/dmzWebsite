@@ -65,6 +65,7 @@ export function StoryModal({ story, onClose }: StoryModalProps) {
                 src={story.image}
                 alt={story.title}
                 fill
+                sizes="(min-width: 1024px) 60vw, calc(100vw - 32px)"
                 className="object-cover"
               />
             )}

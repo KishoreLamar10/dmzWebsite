@@ -69,6 +69,7 @@ export function StoriesSection() {
                 src={story.image}
                 alt={story.title}
                 fill
+                sizes="(min-width: 1024px) calc((100vw - 256px) / 3), (min-width: 768px) calc((100vw - 96px) / 2), calc(100vw - 64px)"
                 className="object-cover transition-transform duration-1000 group-hover:scale-110 grayscale hover:grayscale-0 transition-all duration-700"
               />
               

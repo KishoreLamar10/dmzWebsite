@@ -55,6 +55,7 @@ export function EventsSection() {
                 src={event.image}
                 alt={event.title}
                 fill
+                sizes="(min-width: 1024px) calc((100vw - 264px) / 4), (min-width: 768px) calc((100vw - 88px) / 2), calc(100vw - 64px)"
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
               />
               

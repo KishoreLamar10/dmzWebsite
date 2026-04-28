@@ -55,6 +55,7 @@ export function EventModal({ event, onClose }: EventModalProps) {
               src={event.image}
               alt={event.title}
               fill
+              sizes="(min-width: 1024px) 50vw, calc(100vw - 32px)"
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent lg:hidden" />

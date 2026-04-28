@@ -2,19 +2,13 @@ import { SectionLabel } from '@/components/ui/SectionLabel'
 
 const TEAM = [
   {
-    name: 'Kaviya',
-    role: 'Lead Designer · Year 4 Architecture',
-    bio: 'Specializing in conflict-zone urbanism and symbolic architectural interventions.'
+    name: 'Kaviya Murugavelu'
   },
   {
-    name: 'Nusrat',
-    role: 'Research & Graphics · Year 4 Architecture',
-    bio: 'Focusing on the intersection of digital media, spatial memories, and public space.'
+    name: 'Nusrat Reza'
   },
   {
-    name: 'Sherin',
-    role: 'Technical Strategy · Year 4 Architecture',
-    bio: 'Developing structural solutions for transparency and shared sightline experiences.'
+    name: 'Sherin Abigail Rathnakumar'
   }
 ]
 
@@ -31,8 +25,6 @@ export function TeamSection() {
                 <div className="w-12 h-12 border-2 border-warm-brown/20 rounded-full" />
               </div>
               <h3 className="font-serif font-light text-2xl text-charcoal mb-1">{member.name}</h3>
-              <p className="text-gold text-[10px] tracking-[0.2em] uppercase mb-4 font-bold">{member.role}</p>
-              <p className="text-warm-brown text-sm leading-relaxed max-w-xs">{member.bio}</p>
             </div>
           ))}
         </div>
